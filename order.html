@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> order page</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu ul {
+            list-style: none;
+            z-index: 1000;
+        }
+        
+        #menu ul li {
+            background-color: black;
+            border: 2px solid white;
+            width: 298px;
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            position: relative;
+        }
+        
+        #menu ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        
+        #menu ul li a:hover {
+            background-color: grey;
+        }
+        
+        #menu ul ul {
+            position: absolute;
+            display: none;
+        }
+        
+        #menu ul li:hover>ul {
+            display: block;
+        }
+        
+        table {
+            height: 470px;
+            border-radius: 25px;
+        }
+        
+        input {
+            width: 95%;
+            height: 35px;
+            font-size: 20px;
+        }
+        
+        textarea {
+            width: 95%;
+            height: 98px;
+            font-size: 20px;
+        }
+        
+        button {
+            width: 95%;
+            height: 35px;
+            font-size: 20px;
+        }
+        
+        button:hover {
+            color: white;
+            background-color: purple;
+            border-radius: 25px;
+        }
+        
+        input[type=submit] {
+            width: 95%;
+            height: 35px;
+            font-size: 20px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: red;
+            color: white;
+            border-radius: 25px;
+        }
+        
+        select {
+            width: 95%;
+            height: 35px;
+            font-size: 20px;
+        }
+        
+        #footer {
+            height: 330px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #fb {
+            height: 180px;
+            width: 100%;
+            float: left;
+            color: white;
+            text-align: center;
+        }
+        
+        #fb a {
+            text-decoration: none;
+            display: block;
+        }
+        
+        body {
+            background: linear-gradient(red, blue);
+        }
+    </style>
+</head>
+<!--<script>
+	function checkforblank(){
+		if (document.getElementById('name','email','pno','address','item'.value =="")){
+			alert('Please fill the Details First Before Submitting');
+			return false;
+		}
+
+	}
+</script>-->
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="food_world.html">HOME</a></li>
+            <li><a href="About us in food world.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU</a>
+                <ul>
+                    <li><a href="menu.html">Veg Thali</a>
+                        <li><a href="non veg thali.html">Non-Veg Thali</a>
+                            <li><a href="chaat.html">Chaat</a>
+                                <li><a href="fast food.html">Fast Food</a>
+                                    <li><a href="soup.html">Soup</a>
+                                        <li><a href="pasta.html">Pasta</a>
+                </ul>
+                </li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <form action="order_submit.php" method='POST'>
+        <br>
+        <br>
+        <h1 align="center" style="font-size: 60px;"> Enter Order Details</h1>
+        <br>
+        <br>
+        <div style='margin-left:300px;'>
+            <!-- don't remove any name attribute form any in the  input tag -->
+            <table border="0" width="60%" bgcolor="skyblue" cellspacing="10">
+                <tr>
+                    <th width="20%"> Name: </th>
+                    <td width="60%"><input type="text" name='username' placeholder="Name" id="name" required/></td>
+                </tr>
+                <tr>
+                    <th> Email: </th>
+                    <td><input type="Email" name='email_address' placeholder="Email" id="Email" required/></td>
+                </tr>
+                <tr>
+                    <th> Phone No.: </th>
+                    <td><input type="text" name='phone' placeholder="Phone No." id="pno" required/></td>
+                </tr>
+                <tr>
+                    <th> Item Names: </th>
+                    <td><input type="text" placeholder="Item Names" id="item" name="item_name" required/></td>
+                </tr>
+                <tr>
+                    <th> Quantity: </th>
+                    <td>
+                        <select name="quantity" required>
+								<option value ='1'>1</option>
+								<option value ='2'>2</option>
+								<option value ='3'>3</option>
+								<option value ='4'>4</option>
+								<option value ='5'>5</option>
+								<option value ='6'>6</option>
+								<option value ='7'>7</option>
+								<option value ='8'>8</option>
+								<option value ='9'>9</option>
+								<option value ='10'>10</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th> Address: </th>
+                    <td><textarea placeholder="Address" id="address" name="address" required></textarea></td>
+                </tr>
+                <td></td>
+                <td><input type="submit" size="80" name='submit_order' value="Submit!!"><br><br>
+                    <input type="reset" size="80" name='reset' value="Reset!!"><br><br>
+                    <button onclick="confirm.altify('Are You Really Want To Cancle This Order?')" type="Submit" size="30">Cancel Order!</button><br><br>
+                    <a href="helppage.html"><input type="button" size="80" value="Help People"></a>
+                </td>
+                <!--<td><center><a href="food.html"><input type="button" value="Help"></a></center></td>-->
+                </tr>
+            </table>
+        </div>
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        <div id="fb">
+            <b>Quick link: </b>
+            <br><br><br>
+            <a href="food_world.html">Home</a><br>
+            <a href="About us in food world.html">About</a><br>
+            <a href="menu.html">Menu</a><br>
+            <a href="order.html">Order </a><br>
+            <a href="contact.html">Contact</a><br>
+        </div>
+        <div id="fb">
+            <b>Menu: </b>
+            <br><br> Veg-Thali<br>
+            <br> Non-Veg Thali<br> Chaat<br>
+            <br> Fast Food<br> Soup<br>
+            <br> Pasta<br>
+            <br>
+        </div>
+        <div id="fb">
+            <b>Address: </b>
+            <br><br><br> UP 14, Ghaziabad, <br> Email: example@gmail.com<br> Mobile : XXXXXX7552 <br> Time: 9:00 AM to 10:00 PM<br>
+        </div>
+    </div>
+</body>
+
+</html>

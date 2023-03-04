@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>help desk</title>
+    <style>
+        table {
+            color: white;
+            font-size: 250%;
+            border-radius: 30px;
+        }
+        
+        input {
+            width: 400px;
+            height: 35px;
+            border-radius: 4px;
+            background-color: moccasin;
+        }
+        
+        select {
+            width: 408px;
+            height: 35px;
+            border-radius: 4px;
+            background-color: moccasin;
+        }
+        
+        header {
+            background-color: lightorange;
+            padding: 19px 22px;
+            text-align: center;
+            font-size: 70px;
+            color: orange;
+        }
+        
+        .action_btn {
+            text-align: center;
+            display: inline;
+            width: 200px;
+            height: 35px;
+            border-radius: 100px;
+            font-size: 50%;
+            cursor: pointer;
+            background-color: whitesmoke;
+            color: Black;
+            font: bold;
+            padding: 10px 62px;
+            border-radius: 50px;
+        }
+        
+        textarea {
+            background-color: moccasin;
+        }
+        
+        span {
+            color: red;
+            font-size: 18%;
+        }
+    </style>
+</head>
+
+<body background="C:\Users\DELL\Downloads\wallpaper2.jpg" background-repeat: no-repeat;backgound-size::25%25%;>
+
+    <tr>
+        <td>
+            <font color=blue>
+                <header><b>Share Others,Help Others<b></header></tr><br><br><br>
+            </font>
+        </td>
+    </tr>
+<form action="help_submit.php" method="POST" style="margin-left:0px;">
+    <table  align="center"  cellspacing="30">
+        <tr>
+            <td><b>Name<b></td>
+            <td><input type="text" name ='name'placeholder="Name" required/>
+                <span id="namee"></span></td>
+        </tr>
+        <tr>
+            <td><b>Email<b></td>
+            <td><input type="email" name ='email'placeholder="email" required/>
+                <span id="email"></span></td>
+        </tr>
+        <tr>
+            <td><b>MobileNo<b></td>
+            <td><input type="text"  name ='mobilenumber' placeholder="91**********" required/></td>
+        </tr>
+        <tr>
+            <td><b>Address<b></td>
+            <td><input type=text  name ='address'placeholder="Address" required/></td>
+        </tr>
+        
+        <tr>
+            <td><b>Share<b></td>
+            <td>
+                <select name="Share" reqiured>
+                    <option selected>select</option>
+                    <option value="OH">Old Homes</option>
+                    <option value="Or">Orphanage</option>
+                    <option value="Ch">Charities</option>
+                    <option value="Ot">Others</option>
+               </select>
+           </td>
+        </tr>
+        <tr>
+            <td><b>Quantity<b></td>
+            <td><select name="Quantity"reqiured>
+                <option selected>select</option>
+                <option value="two">for two person</option>
+                <option value="three">for three person</option>
+                <option value="four">for four person</option>
+                <option value="more">more than four person</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+           <td>
+               <b>Donation Location<b>
+            </td>
+            <td>
+                <input type=text  name ='location' placeholder="Location" required/>
+            </td>
+        </tr>
+        <tr>
+            <td><b>View</td>
+            <td><textarea id="view" name="view" rows="5" cols="52"></textarea>
+            </td>
+        </tr>
+            
+        <table  align="center"  cellspacing="10">
+        <tr>
+           <td>
+                <button name="submit" class="action_btn submmit" type="submit" value="Submit">Submit</button>
+            </td>
+            <td>
+                <button name="reset" class="action_btn submmit" type="reset" value="Reset">Reset</button>
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                <a href="food_world.html"><input type="button" class="action_btn submmit"  value="Back Home"></a>
+            </td></tr>
+
+        <p id="back to home"></p>
+                
+            </table>
+            <center> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.2199054118516!2d77.50150215808817!3d28.67648749560011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf39c103e42b7%3A0xc1d1c5b0dc91a995!2sFoodworld!5e0!3m2!1sen!2sin!4v1665546292727!5m2!1sen!2sin" width="500" height="50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+</form>
+    </body>
+</html>

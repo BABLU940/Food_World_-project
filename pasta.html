@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pasta Page</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu ul {
+            list-style: none;
+            z-index: 1000;
+        }
+        
+        #menu ul li {
+            background-color: black;
+            border: 2px solid white;
+            width: 298px;
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            position: relative;
+        }
+        
+        #menu ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        
+        #menu ul li a:hover {
+            background-color: grey;
+        }
+        
+        #menu ul ul {
+            position: absolute;
+            display: none;
+        }
+        
+        #menu ul li:hover>ul {
+            display: block;
+        }
+        
+        #top {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #sub {
+            width: 370px;
+            height: 300px;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 4px 4px black;
+            transition: transform 2s;
+        }
+        
+        #sub:hover {
+            transform: scale(1.15);
+        }
+        
+        #btn {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #btn input {
+            height: 40px;
+            width: 130px;
+            border-radius: 7px;
+            background-color: orange;
+            font-size: 20px;
+            box-shadow: 5px 5px 4px 4px black;
+        }
+        
+        #btn input:hover {
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body bgcolor="lightgreen">
+    <div id="menu">
+        <ul>
+            <li><a href="food_world.html">HOME</a></li>
+            <li><a href="About us in food world.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU</a>
+                <ul>
+                    <li><a href="menu.html">Veg Thali</a>
+                        <li><a href="non veg thali.html">Non-Veg Thali</a>
+                            <li><a href="chaat.html">Chaat</a>
+                                <li><a href="fast food.html">Fast Food</a>
+                                    <li><a href="soup.html">Soup</a>
+                                        <li><a href="pasta.html">Pasta</a>
+                </ul>
+                </li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <br><br>
+    <h1 align="center" style="font-size: 90px;">Pasta's</h1>
+    <br><br><br>
+    <div id="top">
+        <div id="sub">
+            <image src="img/pasta1.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Masala Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+        <div id="sub">
+            <image src="img/pasta2.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">White Sauce Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+        <div id="sub">
+            <image src="img/pasta3.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Creamy Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+    </div>
+    <div id="top">
+        <div id="sub">
+            <image src="img/pasta4.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Indian Style Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+        <div id="sub">
+            <image src="img/pasta5.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Italian Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+        <div id="sub">
+            <image src="img/pasta6.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">French Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+    </div>
+    <div id="top">
+        <div id="sub">
+            <image src="img/pasta7.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Vegetarian Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+        <div id="sub">
+            <image src="img/pasta8.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Meatballs Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now"></a>
+                </div>
+        </div>
+        <div id="sub">
+            <image src="img/pasta9.jpg" width="100%">
+                <p align="center">
+                    <font size="4px">Fall Pasta</font>
+                </p>
+                <div id="btn">
+                    <a href="order.html"><input type="button" value=" Order Now">
+                    </a>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
